@@ -11,4 +11,46 @@
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
     </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The AD person who is assigned the request will move status to &quot;In Progress&quot; when he/she starts and then when complete will change status to &quot;Service Prepared.&quot; This will create automatic email notification to Sales Rep.</inlineHelpText>
+        <label>Status</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>true</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In progress</fullName>
+                    <default>false</default>
+                    <label>In progress</label>
+                </value>
+                <value>
+                    <fullName>Service Prepared</fullName>
+                    <default>false</default>
+                    <label>Service Prepared</label>
+                </value>
+                <value>
+                    <fullName>Service Delivered</fullName>
+                    <default>false</default>
+                    <label>Service Delivered</label>
+                </value>
+                <value>
+                    <fullName>Off-site Technical Consulting</fullName>
+                    <default>false</default>
+                    <label>Off-site Technical Consulting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+	<label>ADvantage_Services</label>
 </CustomObject>
