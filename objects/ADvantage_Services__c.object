@@ -53,4 +53,5 @@
         </valueSet>
     </fields>
 	<label>ADvantage_Services</label>
+	<pluralLabel>ADvantage_Services</pluralLabel>
 </CustomObject>
