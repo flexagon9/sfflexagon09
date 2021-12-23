@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>ADvantage_Services__c</fullName>
+        <description>Picklist for types of ADvantage Services</description>
+        <externalId>false</externalId>
+        <label>ADvantage Services</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Actionable Insights</fullName>
+                    <default>false</default>
+                    <label>Actionable Insights</label>
+                </value>
+                <value>
+                    <fullName>IDEA Workshops</fullName>
+                    <default>false</default>
+                    <label>IDEA Workshops</label>
+                </value>
+                <value>
+                    <fullName>Line Scan</fullName>
+                    <default>false</default>
+                    <label>Line Scan</label>
+                </value>
+                <value>
+                    <fullName>Converting &amp; Application Support</fullName>
+                    <default>false</default>
+                    <label>Converting &amp; Application Support</label>
+                </value>
+                <value>
+                    <fullName>Converting College</fullName>
+                    <default>false</default>
+                    <label>Converting College</label>
+                </value>
+                <value>
+                    <fullName>Sustainability Simplified</fullName>
+                    <default>false</default>
+                    <label>Sustainability Simplified</label>
+                </value>
+                <value>
+                    <fullName>TAC Modelling</fullName>
+                    <default>false</default>
+                    <label>TAC Modelling</label>
+                </value>
+                <value>
+                    <fullName>Lab Services</fullName>
+                    <default>false</default>
+                    <label>Lab Services</label>
+                </value>
+                <value>
+                    <fullName>Liner Recycling</fullName>
+                    <default>false</default>
+                    <label>Liner Recycling</label>
+                </value>
+                <value>
+                    <fullName>Concept Lab</fullName>
+                    <default>false</default>
+                    <label>Concept Lab</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>iLab</fullName>
+                    <default>false</default>
+                    <label>iLab</label>
+                </value>
+                <value>
+                    <fullName>Off-site Technical Consulting</fullName>
+                    <default>false</default>
+                    <label>Off-site Technical Consulting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Lookup to Account</description>
+        <externalId>false</externalId>
+        <label>Related to</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Customer, Non-Customer, Contract Packager,</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>ADvantage Services</relationshipLabel>
+        <relationshipName>ADvantage_Services_Programs</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(Contact_Name__r.AccountId, Contact_Name__r.Account.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Related to</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_to__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC user name</description>
+        <externalId>false</externalId>
+        <label>Assigned to</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>ADvantage_Services_Programs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Name__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Customer</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>ADvantage Services</relationshipLabel>
+        <relationshipName>ADvantage_Services_Programs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Name__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Service_Provided__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Service Provided</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description_of_Service_Provided__c</fullName>
+        <externalId>false</externalId>
+        <label>Description of Service Provided</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup field to linked opportunity</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>ADvantage Services</relationshipLabel>
+        <relationshipName>ADvantage_Services</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Preparation_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the due date the account owner has requested the service to be prepared. Once request has been prepared the assigned person will change status to &quot;Service Prepared.&quot;</inlineHelpText>
+        <label>Preparation Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>false</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Service_Delivered_By__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who delivered the service to the customer. List the name(s).</inlineHelpText>
+        <label>Service Delivered By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Service_Requested__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Account Owner to provide details of the request</inlineHelpText>
+        <label>Service Requested</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The AD person who is assigned the request will move status to &quot;In Progress&quot; when he/she starts and then when complete will change status to &quot;Service Prepared.&quot; This will create automatic email notification to Sales Rep.</inlineHelpText>
+        <label>Status</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>true</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In progress</fullName>
+                    <default>false</default>
+                    <label>In progress</label>
+                </value>
+                <value>
+                    <fullName>Service Prepared</fullName>
+                    <default>false</default>
+                    <label>Service Prepared</label>
+                </value>
+                <value>
+                    <fullName>Service Delivered</fullName>
+                    <default>false</default>
+                    <label>Service Delivered</label>
+                </value>
+                <value>
+                    <fullName>Off-site Technical Consulting</fullName>
+                    <default>false</default>
+                    <label>Off-site Technical Consulting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
