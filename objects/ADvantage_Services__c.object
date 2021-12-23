@@ -54,4 +54,8 @@
     </fields>
 	<label>ADvantage_Services</label>
 	<pluralLabel>ADvantage_Services</pluralLabel>
+	 <nameField>
+        <label>ADvantage_Services Name</label>
+        <type>Text</type>
+    </nameField>
 </CustomObject>
