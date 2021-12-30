@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>NewVoiceOfCustomer</content>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>VoiceOfCustomerMobile</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>Customer_Account_Contact_Information</fullName>
+        <description>Used in NewVoiceOfCustomer visualforce page</description>
+        <displayedFields>
+            <field>Account_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Contact_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <label>Customer Account &amp; Contact Information</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Customer_Account_Contact_Information_AP</fullName>
+        <description>Used in the VF page:- NewVoiceOfCustomer</description>
+        <displayedFields>
+            <field>Account_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Contact_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Customer Account &amp; Contact Information</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Feedback_Form</fullName>
+        <description>Used in vf page : NewVoiceofCustomer</description>
+        <displayedFields>
+            <field>Feedback_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Specific_Area_Function__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Customer_Satisfaction_Level__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Feedback_Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <label>Feedback Form</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Feedback_Form_EU</fullName>
+        <description>Used for EU region -&gt; New Voice of Customer visual force page</description>
+        <displayedFields>
+            <field>Feedback_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Feedback_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Customer_Satisfaction_Level__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Feedback_Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <label>Feedback Form</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Suggested_Corrective_Action</fullName>
+        <description>Customer Feedback new section</description>
+        <displayedFields>
+            <field>Status_Cust_Feedback__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Suggested_Corrective_Action_Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Suggested Corrective Action</label>
+    </fieldSets>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Account Name</description>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer Feedback</relationshipLabel>
+        <relationshipName>Customer_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Owner_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Owner Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Owner.FirstName &amp; &quot; &quot; &amp; Account_Name__r.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_owner_email_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Owner.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account owner email formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Name__r.MailingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Contact_Name</description>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Customer Feedback</relationshipLabel>
+        <relationshipName>Customer_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_e_mail__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Name__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact e-mail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Name__r.MailingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_By_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.FirstName  &amp; &quot; &quot; &amp; CreatedBy.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created By Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Satisfaction_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Satisfaction Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Feedback_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Poor</fullName>
+                    <default>false</default>
+                    <label>Poor</label>
+                </value>
+                <value>
+                    <fullName>Fair</fullName>
+                    <default>false</default>
+                    <label>Fair</label>
+                </value>
+                <value>
+                    <fullName>Good</fullName>
+                    <default>false</default>
+                    <label>Good</label>
+                </value>
+                <value>
+                    <fullName>Very Good</fullName>
+                    <default>false</default>
+                    <label>Very Good</label>
+                </value>
+                <value>
+                    <fullName>Excellent</fullName>
+                    <default>false</default>
+                    <label>Excellent</label>
+                </value>
+                <value>
+                    <fullName>5-Very satisfied</fullName>
+                    <default>false</default>
+                    <label>5-Very satisfied</label>
+                </value>
+                <value>
+                    <fullName>4- Satisfied</fullName>
+                    <default>false</default>
+                    <label>4- Satisfied</label>
+                </value>
+                <value>
+                    <fullName>3- Neither Satisfied nor Dissatisfied</fullName>
+                    <default>false</default>
+                    <label>3- Neither Satisfied nor Dissatisfied</label>
+                </value>
+                <value>
+                    <fullName>2- Not very Satisfied</fullName>
+                    <default>false</default>
+                    <label>2- Not very Satisfied</label>
+                </value>
+                <value>
+                    <fullName>1- Not at all Satisfied</fullName>
+                    <default>false</default>
+                    <label>1- Not at all Satisfied</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Positive feedback</controllingFieldValue>
+                <valueName>Good</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Positive feedback</controllingFieldValue>
+                <valueName>Very Good</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Positive feedback</controllingFieldValue>
+                <valueName>Excellent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Negative feedback</controllingFieldValue>
+                <valueName>Poor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Negative feedback</controllingFieldValue>
+                <valueName>Fair</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer Feedback</controllingFieldValue>
+                <valueName>5-Very satisfied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer Feedback</controllingFieldValue>
+                <valueName>4- Satisfied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer Feedback</controllingFieldValue>
+                <valueName>3- Neither Satisfied nor Dissatisfied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer Feedback</controllingFieldValue>
+                <valueName>2- Not very Satisfied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer Feedback</controllingFieldValue>
+                <valueName>1- Not at all Satisfied</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>If (ISPICKVAL(Account_Name__r.Type, &quot;Customer&quot;),&quot;Customer&quot;,
+				If (ISPICKVAL(Account_Name__r.Type, &quot;Non-Customer&quot;),&quot;Non-Customer&quot;,
+								If (ISPICKVAL(Account_Name__r.Type, &quot;Competitor&quot;),&quot;Competitor&quot;,
+												If (ISPICKVAL(Account_Name__r.Type, &quot;Dealer&quot;),&quot;Dealer&quot;,
+																If (ISPICKVAL(Account_Name__r.Type, &quot;Contract Packager&quot;),&quot;Contract Packager&quot;, &quot;NA&quot;)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Account_Name__r.Division__c, &quot;LPM&quot;), &quot;LPM&quot;,
+
+IF(ISPICKVAL(Account_Name__r.Division__c, &quot;Graphics&quot;), &quot;Graphics&quot;
+,
+IF(ISPICKVAL(Account_Name__r.Division__c, &quot;Reflective&quot;), &quot;Reflective&quot;, &quot;NA&quot;
+)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Division</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feedback_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback Categories</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AD Touchpoints</fullName>
+                    <default>false</default>
+                    <label>AD Touchpoints</label>
+                </value>
+                <value>
+                    <fullName>Communication</fullName>
+                    <default>false</default>
+                    <label>Communication</label>
+                </value>
+                <value>
+                    <fullName>Pricing</fullName>
+                    <default>false</default>
+                    <label>Pricing</label>
+                </value>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Feedback_Description__c</fullName>
+        <description>Feedback Description</description>
+        <externalId>false</externalId>
+        <label>Feedback Description</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Feedback_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Feedback Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feedback_Type__c</fullName>
+        <description>Feedback type</description>
+        <externalId>false</externalId>
+        <label>Feedback Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Positive feedback</fullName>
+                    <default>false</default>
+                    <label>Positive feedback</label>
+                </value>
+                <value>
+                    <fullName>Negative feedback</fullName>
+                    <default>false</default>
+                    <label>Negative feedback</label>
+                </value>
+                <value>
+                    <fullName>Customer Feedback</fullName>
+                    <default>false</default>
+                    <label>Customer Feedback</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Geographic_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Name__r.Geographic_Region__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Geographic Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_address__c</fullName>
+        <externalId>false</externalId>
+        <formula>(If (NOT(ISBLANK(Contact_Name__r.MailingStreet)), Contact_Name__r.MailingStreet &amp; &quot;, &quot;, &quot;&quot;)) &amp;
+(If (NOT(ISBLANK(Contact_Name__r.MailingCity)), Contact_Name__r.MailingCity &amp; &quot;, &quot;, &quot;&quot;)) &amp;
+(If (NOT(ISBLANK(Contact_Name__r.MailingState)), Contact_Name__r.MailingState &amp; &quot;, &quot;, &quot;&quot;)) &amp;
+(If (NOT(ISBLANK(Contact_Name__r.MailingPostalCode)), Contact_Name__r.MailingPostalCode &amp; &quot;, &quot;, &quot;&quot;)) &amp;
+(If (NOT(ISBLANK(Contact_Name__r.MailingCountry)), Contact_Name__r.MailingCountry, &quot;&quot;))</formula>
+        <label>Mailing address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Newsletter_OptOut__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Contact_Name__r.Newsletter_Opt_Out__c = TRUE, &quot;Yes&quot; , &quot;No&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Newsletter Opt-Out</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ok_to_Send_Surveys__c</fullName>
+        <externalId>false</externalId>
+        <formula>If (ISPICKVAL(Contact_Name__r.Ok_to_Send_Surveys__c, &quot;Yes&quot;),&quot;Yes&quot;,&quot;No&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ok-to-Send Surveys</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Specific_Area_Function__c</fullName>
+        <description>Specific Area / Function</description>
+        <externalId>false</externalId>
+        <label>Specific Area / Function</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AD personnel (Sales Rep, BD, Technical Service, ...)</fullName>
+                    <default>false</default>
+                    <label>AD personnel (Sales Rep, BD, Technical Service, ...)</label>
+                </value>
+                <value>
+                    <fullName>ADvantage Services</fullName>
+                    <default>false</default>
+                    <label>ADvantage Services</label>
+                </value>
+                <value>
+                    <fullName>Complaint Resolution</fullName>
+                    <default>false</default>
+                    <label>Complaint Resolution</label>
+                </value>
+                <value>
+                    <fullName>Customer Service</fullName>
+                    <default>false</default>
+                    <label>Customer Service</label>
+                </value>
+                <value>
+                    <fullName>Invoicing</fullName>
+                    <default>false</default>
+                    <label>Invoicing</label>
+                </value>
+                <value>
+                    <fullName>Logistics / Delivery</fullName>
+                    <default>false</default>
+                    <label>Logistics / Delivery</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Pricing / Quotation</fullName>
+                    <default>false</default>
+                    <label>Pricing / Quotation</label>
+                </value>
+                <value>
+                    <fullName>Product Information</fullName>
+                    <default>false</default>
+                    <label>Product Information</label>
+                </value>
+                <value>
+                    <fullName>Product Quality (QA)</fullName>
+                    <default>false</default>
+                    <label>Product Quality (QA)</label>
+                </value>
+                <value>
+                    <fullName>Service Program</fullName>
+                    <default>false</default>
+                    <label>Service Program</label>
+                </value>
+                <value>
+                    <fullName>Website / Customer Portal</fullName>
+                    <default>false</default>
+                    <label>Website / Customer Portal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_Cust_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Suggested_Corrective_Action_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Suggested Corrective Action Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <label>Customer Feedback</label>
+    <listViews>
+        <fullName>China_Customer_Feedback</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Feedback_Type__c</columns>
+        <columns>Specific_Area_Function__c</columns>
+        <columns>Customer_Satisfaction_Level__c</columns>
+        <columns>Feedback_Description__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Customer Feedback</label>
+    </listViews>
+    <listViews>
+        <fullName>China_Customer_Feedback1</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Feedback_Type__c</columns>
+        <columns>Specific_Area_Function__c</columns>
+        <columns>Customer_Satisfaction_Level__c</columns>
+        <columns>Feedback_Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Country__c</field>
+            <operation>equals</operation>
+            <value>China</value>
+        </filters>
+        <label>China Customer Feedback</label>
+    </listViews>
+    <listViews>
+        <fullName>India_Customer_Feedback</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Feedback_Type__c</columns>
+        <columns>Specific_Area_Function__c</columns>
+        <columns>Customer_Satisfaction_Level__c</columns>
+        <columns>Feedback_Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Country__c</field>
+            <operation>equals</operation>
+            <value>India</value>
+        </filters>
+        <label>India Customer Feedback</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CF{000000}</displayFormat>
+        <label>Customer Feedback Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Customer Feedback</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Voice_Of_CustomerAP</fullName>
+        <active>true</active>
+        <label>Voice Of CustomerAP</label>
+        <picklistValues>
+            <picklist>Customer_Satisfaction_Level__c</picklist>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Feedback_Category__c</picklist>
+            <values>
+                <fullName>AD Touchpoints</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Feedback_Type__c</picklist>
+            <values>
+                <fullName>Negative feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Positive feedback</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Specific_Area_Function__c</picklist>
+            <values>
+                <fullName>AD personnel %28Sales Rep%2C BD%2C Technical Service%2C %2E%2E%2E%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ADvantage Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint Resolution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoicing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics %2F Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing %2F Quotation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Quality %28QA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website %2F Customer Portal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Cust_Feedback__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Voice_of_CustomerEU</fullName>
+        <active>true</active>
+        <label>Voice of CustomerEU</label>
+        <picklistValues>
+            <picklist>Customer_Satisfaction_Level__c</picklist>
+            <values>
+                <fullName>1- Not at all Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2- Not very Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3- Neither Satisfied nor Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4- Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5-Very satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Feedback_Category__c</picklist>
+            <values>
+                <fullName>AD Touchpoints</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Feedback_Type__c</picklist>
+            <values>
+                <fullName>Customer Feedback</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Specific_Area_Function__c</picklist>
+            <values>
+                <fullName>AD personnel %28Sales Rep%2C BD%2C Technical Service%2C %2E%2E%2E%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ADvantage Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint Resolution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoicing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics %2F Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing %2F Quotation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Quality %28QA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website %2F Customer Portal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Cust_Feedback__c</picklist>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Feedback_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Specific_Area_Function__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Satisfaction_Level__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Feedback_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Specific_Area_Function__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Satisfaction_Level__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Feedback_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Specific_Area_Function__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Customer_Satisfaction_Level__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Feedback_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Specific_Area_Function__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Satisfaction_Level__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Account_and_Contact_Validation</fullName>
+        <active>true</active>
+        <description>Account name and Contact&apos;s Account Name should match</description>
+        <errorConditionFormula>NOT (Account_Name__r.Name ==  Contact_Name__r.Account.Name )</errorConditionFormula>
+        <errorMessage>Account Name and Contact&apos;s Account Name should be same. Please check and correct the values.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Access_to_the_Account_Owner</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name =&apos;Voice Of CustomerAP&apos;,($User.FirstName &amp; &apos; &apos; &amp;  $User.LastName) == Account_Owner__c,OR(ISCHANGED(Feedback_Type__c ),ISCHANGED(Customer_Satisfaction_Level__c),ISCHANGED(Specific_Area_Function__c),ISCHANGED(Feedback_Description__c) ))</errorConditionFormula>
+        <errorMessage>You are not authorized to edit these fields.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
