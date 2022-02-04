@@ -522,9 +522,9 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>val1</fullName>
+                    <fullName>val77</fullName>
                     <default>false</default>
-                    <label>val1</label>
+                    <label>val77</label>
                 </value>
                 <value>
                     <fullName>val2</fullName>
