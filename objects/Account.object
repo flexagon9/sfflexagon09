@@ -517,6 +517,7 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>CustomerPriority__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -541,6 +542,22 @@
                     <label>val4</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>High</controllingFieldValue>
+                <valueName>val1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High</controllingFieldValue>
+                <valueName>val2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Low</controllingFieldValue>
+                <valueName>val3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Medium</controllingFieldValue>
+                <valueName>val4</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <listViews>
