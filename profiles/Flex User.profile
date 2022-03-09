@@ -23283,6 +23283,15 @@
         <tab>standard-UserProvisioningRequest</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CustomerScorecard__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>	
     <userLicense>Identity</userLicense>
     <userPermissions>
         <enabled>true</enabled>
