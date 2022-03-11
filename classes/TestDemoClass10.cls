@@ -1,2 +1,2 @@
-public class TestDemoClass10 {
+public Virtual class TestDemoClass10 {
 }

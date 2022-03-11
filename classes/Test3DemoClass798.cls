@@ -1,2 +1,2 @@
-public class Test3DemoClass798 {
+public class Test3DemoClass798 extends Test2DemoClass10 {
 }

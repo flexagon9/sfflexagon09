@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
-    <networkAccess/>
+    <canUsersGrantLoginAccess>true</canUsersGrantLoginAccess>
+    <enableAdminLoginAsAnyUser>false</enableAdminLoginAsAnyUser>
+    <enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>
+    <enableAuraSecureEvalPref>true</enableAuraSecureEvalPref>
+    <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
+    <networkAccess>
+        <ipRanges>
+            <end>192.168.0.200</end>
+            <start>192.168.0.100</start>
+        </ipRanges>
+        <ipRanges>
+            <end>27.116.20.45</end>
+            <start>27.116.20.45</start>
+        </ipRanges>
+        <ipRanges>
+            <description>utlwt01</description>
+            <end>20.46.248.26</end>
+            <start>20.46.248.26</start>
+        </ipRanges>
+        <ipRanges>
+            <description>sellt01</description>
+            <end>10.48.0.184</end>
+            <start>10.48.0.184</start>
+        </ipRanges>
+        <ipRanges>
+            <end>10.48.0.250</end>
+            <start>10.48.0.0</start>
+        </ipRanges>
+    </networkAccess>
     <passwordPolicies>
         <complexity>AlphaNumeric</complexity>
         <expiration>NinetyDays</expiration>
@@ -13,7 +41,11 @@
         <questionRestriction>DoesNotContainPassword</questionRestriction>
     </passwordPolicies>
     <sessionSettings>
+        <allowUserAuthenticationByCertificate>false</allowUserAuthenticationByCertificate>
+        <canConfirmEmailChangeInLightningCommunities>true</canConfirmEmailChangeInLightningCommunities>
+        <canConfirmIdentityBySmsOnly>true</canConfirmIdentityBySmsOnly>
         <disableTimeoutWarning>false</disableTimeoutWarning>
+        <enableBuiltInAuthenticator>false</enableBuiltInAuthenticator>
         <enableCSPOnEmail>true</enableCSPOnEmail>
         <enableCSRFOnGet>true</enableCSRFOnGet>
         <enableCSRFOnPost>true</enableCSRFOnPost>
@@ -22,13 +54,38 @@
         <enableClickjackNonsetupUser>false</enableClickjackNonsetupUser>
         <enableClickjackNonsetupUserHeaderless>false</enableClickjackNonsetupUserHeaderless>
         <enableClickjackSetup>true</enableClickjackSetup>
+        <enableContentSniffingProtection>true</enableContentSniffingProtection>
+        <enableLightningLogin>true</enableLightningLogin>
+        <enableLightningLoginOnlyWithUserPerm>false</enableLightningLoginOnlyWithUserPerm>
+        <enableOauthCorsPolicy>false</enableOauthCorsPolicy>
         <enablePostForSessions>false</enablePostForSessions>
         <enableSMSIdentity>true</enableSMSIdentity>
+        <enableU2F>false</enableU2F>
+        <enableXssProtection>true</enableXssProtection>
         <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
+        <enforceUserDeviceRevoked>false</enforceUserDeviceRevoked>
         <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
         <forceRelogin>true</forceRelogin>
+        <hasRetainedLoginHints>false</hasRetainedLoginHints>
+        <hasUserSwitching>true</hasUserSwitching>
+        <identityConfirmationOnEmailChange>false</identityConfirmationOnEmailChange>
+        <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
         <lockSessionsToDomain>true</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>
+        <lockerServiceCSP>true</lockerServiceCSP>
+        <lockerServiceNext>false</lockerServiceNext>
+        <lockerServiceNextControl>false</lockerServiceNextControl>
+        <redirectionWarning>false</redirectionWarning>
+        <referrerPolicy>true</referrerPolicy>
+        <requireHttpOnly>false</requireHttpOnly>
         <sessionTimeout>TwoHours</sessionTimeout>
+        <useLocalStorageForLogoutUrl>false</useLocalStorageForLogoutUrl>
     </sessionSettings>
+    <singleSignOnSettings>
+        <enableCaseInsensitiveFederationID>false</enableCaseInsensitiveFederationID>
+        <enableMultipleSamlConfigs>true</enableMultipleSamlConfigs>
+        <enableSamlJitProvisioning>false</enableSamlJitProvisioning>
+        <enableSamlLogin>false</enableSamlLogin>
+        <isLoginWithSalesforceCredentialsDisabled>false</isLoginWithSalesforceCredentialsDisabled>
+    </singleSignOnSettings>
 </SecuritySettings>
