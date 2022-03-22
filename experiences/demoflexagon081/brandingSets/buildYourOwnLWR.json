@@ -97,6 +97,7 @@
     "LinkTextDecorationHover" : "underline",
     "MaxContentWidthDesktop" : "1800px",
     "MaxContentWidthMobile" : "none",
+    "MobileBaseFontSize" : "16px",
     "PrimaryAccentColor" : "#005fb2",
     "PrimaryAccentForegroundColor" : "#ffffff",
     "SiteLogo" : "",
