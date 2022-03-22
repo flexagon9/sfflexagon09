@@ -8,7 +8,7 @@
       "componentAttributes" : {
         "backgroundImageConfig" : "",
         "backgroundImageOverlay" : "rgba(0,0,0,0)",
-        "sectionConfig" : "{\"UUID\":\"7014fa4f-e6dd-45fe-946d-d300876791b4\",\"columns\":[{\"UUID\":\"d3a8bcd0-3002-40b1-9bf1-64d6168f07e0\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"2e757611-08ee-4e4b-a644-454f41a25e36\",\"columnName\":\"Column 2\",\"columnKey\":\"dadc9\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+        "sectionConfig" : "{\"UUID\":\"7014fa4f-e6dd-45fe-946d-d300876791b4\",\"columns\":[{\"UUID\":\"d3a8bcd0-3002-40b1-9bf1-64d6168f07e0\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
       },
       "componentName" : "community_layout:section",
       "id" : "7014fa4f-e6dd-45fe-946d-d300876791b4",
@@ -26,12 +26,6 @@
         "id" : "d3a8bcd0-3002-40b1-9bf1-64d6168f07e0",
         "regionLabel" : "Column 1",
         "regionName" : "col1",
-        "renditionMap" : { },
-        "type" : "region"
-      }, {
-        "id" : "2e757611-08ee-4e4b-a644-454f41a25e36",
-        "regionLabel" : "Column 2",
-        "regionName" : "dadc9",
         "renditionMap" : { },
         "type" : "region"
       } ],
