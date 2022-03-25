@@ -11,7 +11,7 @@
         "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
         "pageType" : "",
         "showSubTopics" : true,
-        "title" : "Welcome! dear Customer",
+        "title" : "Welcome! dear Customer1111",
         "uniqueNameOrId" : ""
       },
       "componentName" : "forceCommunity:headline",
@@ -79,19 +79,6 @@
       },
       "componentName" : "forceCommunity:homeTabs",
       "id" : "8db7e9a3-7f6f-4cff-956e-9c27bee81aae",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : {
-        "cacheAge" : 1440,
-        "filterName" : "FlowInterviewLog.FlowInterviewGuid",
-        "reportId" : "00O4p0000040o0h",
-        "showRefreshButton" : true,
-        "showTitle" : false
-      },
-      "componentName" : "forceCommunity:reportChart",
-      "id" : "464036b2-f158-4474-8dad-d2e125725417",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
