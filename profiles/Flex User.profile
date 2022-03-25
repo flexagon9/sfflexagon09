@@ -201,6 +201,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Test1R1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Test2DemoClass1</apexClass>
         <enabled>true</enabled>
     </classAccesses>
