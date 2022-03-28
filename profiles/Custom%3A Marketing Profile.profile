@@ -22635,11 +22635,6 @@
         <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>test__mdt.text__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>test_flow</flow>
@@ -22900,9 +22895,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Waypoint__c-Waypoint Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>test__mdt-test Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
