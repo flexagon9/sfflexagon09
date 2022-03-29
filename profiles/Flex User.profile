@@ -22896,6 +22896,9 @@
     <layoutAssignments>
         <layout>Waypoint__c-Waypoint Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>test__mdt-test Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>true</allowDelete>
