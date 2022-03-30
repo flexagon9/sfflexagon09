@@ -155,33 +155,39 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <fields>
         <fullName>ActivityDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>ActivityDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>Attendees</fullName>
     </fields>
     <fields>
         <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>DurationInMinutes</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>Email</fullName>
     </fields>
     <fields>
         <fullName>EndDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>EventSubtype</fullName>
     </fields>
     <fields>
         <fullName>IsAllDayEvent</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>IsPrivate</fullName>
@@ -194,12 +200,15 @@
     </fields>
     <fields>
         <fullName>IsVisibleInSelfService</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>Location</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -207,24 +216,30 @@
     </fields>
     <fields>
         <fullName>ShowAs</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>StartDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Type</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
         <type>Picklist</type>
     </fields>
     <fields>
         <fullName>WhatId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>WhoId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
     </fields>
     <listViews>
@@ -474,4 +489,155 @@
     </recordTypes>
     <searchLayouts/>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>FollowUp_Task_Reminder_DateTime</fullName>
+        <active>true</active>
+        <description>Validates the user enters a reminder date/time if creating a follow-up task</description>
+        <errorConditionFormula>AND(FollowUp_Create_Task__c, ISBLANK(FollowUp_Task_Reminder__c))</errorConditionFormula>
+        <errorDisplayField>FollowUp_Task_Reminder__c</errorDisplayField>
+        <errorMessage>Please enter a reminder date/time for the follow up task</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FollowUp_Task_Validate_Create_Field</fullName>
+        <active>true</active>
+        <description>Prevents the user from unchecking the Create Follow-Up checkbox if the task was already created</description>
+        <errorConditionFormula>AND(
+NOT( FollowUp_Create_Task__c ),
+PRIORVALUE(FollowUp_Create_Task__c)
+)</errorConditionFormula>
+        <errorDisplayField>FollowUp_Create_Task__c</errorDisplayField>
+        <errorMessage>Once the follow up task was created, this field cannot be unchecked</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>External_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>External Email</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var body =&apos;{!Event.Minutes_AD_Customer__c}&apos;+&apos;%0A%0A&apos;+ 
+&apos;{!Event.Goal_of_Next_Visit__c}&apos; ;
+
+window.top.location.href=&apos;/_ui/core/email/author/EmailAuthor?retURL={!Event.Id}&amp;p3_lkid={!Event.What}&amp;p7=&apos;+body;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Internal_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send an Email</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+var result = sforce.connection.query(&quot;SELECT LongTextNotes__c FROM ObjectExtender__c WHERE ExternalId__c = &apos;{!CASESAFEID(Event.Id)}&apos;&quot;); 
+
+var body = &quot;&quot;; 
+if (result.size != &quot;0&quot;) { 
+    var record = result.getArray(&quot;records&quot;)[0]; 
+    body = record.LongTextNotes__c; 
+} 
+
+window.top.location.href=&apos;/_ui/core/email/author/EmailAuthor?retURL={!Event.Id}&amp;p3_lkid={!Event.What}&amp;p7=&apos;+encodeURIComponent(body);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Meeting_Notes</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Meeting Notes</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/ActivityVisitReportExtender?id={!CASESAFEID(Event.Id)}&amp;type=Event</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Event</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Event</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/00U/e?what_id={!Account.Id}&amp;retURL=%2F{!Account.Id}&amp;RecordType=012U0000000DaKE&amp;ent=Event</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Event_NA</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Event</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/00U/e?what_id={!Account.Id}&amp;retURL=%2F{!IF(ISBLANK(Contact.Id),Account.Id,Contact.Id)}&amp;RecordType=012U0000000DaKE&amp;ent=Event&amp;evt5=Log%20Activity&amp;00NU0000001J0Ds=Meeting&amp;who_id={!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Visit_Report</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Visit Report</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/00U/e?what_id={!Account.Id}&amp;retURL=%2Fapex%2FloadLastActivity?aId={!Account.Id}&amp;RecordType=012U0000000DaK9&amp;ent=Event</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Pre_Calling_Process</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Pre-Calling Process</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/ActivityVisitReportExtenderPreCalling?id={!CASESAFEID(Event.Id)}&amp;type=Event</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Visit_Prep_Report_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Visit Prep Report PDF</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/VisitRptAttachmentPage?accid={!Account.Id}&amp;conid={!Contact.Id}&amp;eventid={!Event.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Visit_Prep_Summary_Report</fullName>
+        <availability>online</availability>
+        <description>Visit Prep Summary Report</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Visit Prep Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/Visit_Prep_Summary_Report?accid={!Account.Id}&amp;conid={!Contact.Id}&amp;eventid={!Event.Id}</url>
+    </webLinks>
 </CustomObject>
