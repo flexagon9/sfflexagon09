@@ -385,45 +385,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Type__c</picklist>
-            <values>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Insightful Meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Investigative Discussions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>To-do</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Training</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Visit Report</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Visit_Report_Type__c</picklist>
             <values>
                 <fullName>Courtesy</fullName>
@@ -499,37 +460,6 @@
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type__c</picklist>
-            <values>
-                <fullName>Email</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Meeting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Call</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>To-do</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Training</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Visit Report</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
