@@ -76,4 +76,8 @@
         <name>DependencyIntegrationTest</name>
         <type>ConnectedApp</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>CustomerService Portal</name>
+        <type>Network</type>
+    </appMenuItems>
 </AppMenu>
