@@ -384,29 +384,6 @@
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>Visit_Report_Type__c</picklist>
-            <values>
-                <fullName>Courtesy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospecting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Training</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Upselling</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
     </recordTypes>
     <recordTypes>
         <fullName>Events_Visit_Report_Record_Type</fullName>
@@ -460,29 +437,6 @@
             </values>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Visit_Report_Type__c</picklist>
-            <values>
-                <fullName>Courtesy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospecting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Training</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Upselling</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
