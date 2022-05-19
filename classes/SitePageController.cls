@@ -3,7 +3,7 @@ public class SitePageController {
     private Integer privateValue;
     
     public SitePageController(){
-        privateValue = 1;
+        privateValue = 2;
     }
     
     public pageReference updateValue() {
