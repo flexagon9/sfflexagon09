@@ -9,7 +9,7 @@
         <duplicateRuleFilterItems>
             <field>AccountSource</field>
             <operation>contains</operation>
-            <value>Web, Phone Inquiry</value>
+            <value>Phone Inquiry, Web</value>
             <sortOrder>1</sortOrder>
             <table>Account</table>
         </duplicateRuleFilterItems>
